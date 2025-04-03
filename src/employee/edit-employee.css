@@ -1,0 +1,15 @@
+.edit-employee > * {
+	width:  100%;
+	padding:  0.25rem 0rem;
+}
+.save-button {
+	border: none;
+	border-radius: 0.625rem;
+	display: block;
+	height: 2rem;
+	margin-left: 0.3rem;
+	margin-top: 0.5rem;
+	padding: 0.3rem 1.25rem;
+	text-decoration: none;
+	width: 6rem;
+}

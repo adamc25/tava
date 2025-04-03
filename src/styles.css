@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(247, 249, 252);
+  font-family: poppins, "Helvetica", "Arial", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#root {
+  display: flex;
+}
+
+nav {
+  height: 100%;
+  width: 240px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+nav .logo-container {
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+nav .logo-container img {
+  max-width: 150px;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  flex: 1;
+}
+
+.router {
+	display: block;
+	margin-left:  0.3rem;
+	padding: 0.3rem 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nav-link {
+	color:  black;
+  transition: background-color 0.3s;
+}
+
+.active-link, button {
+	color:  white;
+  background-color: #cc1b0e;
+}
+
+.flex {
+	display:  flex;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.5rem;
+  color: #721c24;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+select:hover {
+  outline: 1px solid red; /* Outline color and thickness on hover */
+}
+
+.card {
+  background-color: #fff;          /* White background */
+  border-radius: 0.5rem;              /* Rounded corners */
+  box-shadow: 0 0.25rem 0.4rem rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 1.25rem;                   /* Padding around content */
+  margin: 1rem; /* Margin of 16px (1rem at default 16px font-size) */
+  width: 95%;                     /* Make the card take up 100% of its container's width */
+  display: flex;                   /* Flexbox layout */
+  flex-direction: column;          /* Stack content vertically */
+  align-items: flex-start;         /* Align content to the left */
+  transition: transform 0.3s ease; /* Add a smooth transition on hover */
+  min-width: 50rem;
+}

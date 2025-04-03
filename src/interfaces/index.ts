@@ -1,0 +1,9 @@
+export { IDepartmentProps } from './department-props.interface';
+export { IDepartment } from './department.interface';
+export { IEmployeeListItemProps } from './employee-list-item-props.interface';
+export { IEmployee } from './employee.interface';
+export { IEmploymentStatus } from './employment-status.interface';
+export { IOrderBy } from './order-by.interface';
+export { IQueryCriteria } from './query-criteria.interface';
+export { ISearchBy } from './search-by.interface';
+export { ISearchField } from './search-field.interface';

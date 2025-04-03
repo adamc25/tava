@@ -1,0 +1,18 @@
+.employee-list-wrapper {
+	padding: 1.25rem;
+	width: 100%;
+}
+.apply-filters {
+	border: none;
+	border-radius: 0.625rem;
+	height: 2rem;
+	margin-left:  1rem;
+  margin-top: 0.3rem;
+  width: 6rem;
+}
+.employee-list-left-margin {
+	margin-left:  1rem;
+}
+.employee-list-top-margin {
+	margin-top:  0.3rem;
+}

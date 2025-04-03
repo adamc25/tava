@@ -1,0 +1,74 @@
+.employee-name {
+	font-weight: 400;
+}
+.employee-list-item {
+	width: 100%;
+	box-sizing: border-box;
+}
+.employee-list-item:hover {
+	background-color: yellow;
+}
+.employee-list-item > :first-child {
+	padding: 0.5rem 0rem 0.5rem 1rem;
+  flex: 0 0 25%;
+}
+.employee-list-item > :nth-child(2) {
+  flex: 0 0 20%;
+}
+.employee-list-item > :nth-child(3) {
+  flex: 0 0 40%;
+}
+.employee-list-item > :nth-child(4) {
+  flex: 0 0 15%;
+}
+.department-list-item-field {
+	align-items: center;
+	border-bottom: 1px solid lightgrey;
+	box-sizing: border-box;
+	font-weight: 400;
+	height:  3.75rem;
+	line-height: 1.2;
+	overflow: hidden;
+	padding: 0rem 0.5rem;
+}
+.employee-image-wrapper {
+	align-items: center;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	height: 50px;
+	justify-content: center;
+	line-height: 1.2;
+	margin-right: 0.5rem;
+	min-height: 50px;
+	min-width: 50px;
+	overflow: hidden;
+	width: 50px;
+}
+img.employee-image {
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+span.employee-name {
+	color: rebeccapurple;
+}
+span.employee-value {
+	overflow: hidden;
+	textOverflow: ellipsis;
+}
+.employment-status-image {
+	color: white;
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	padding: 0.25rem 0.75rem;
+	text-align: center;
+}
+.employment-status-image.green {
+	background-color: green;
+}
+.employment-status-image.orange {
+	background-color: orange;
+}

@@ -1,0 +1,27 @@
+.department-header-card h2 {
+	padding-left:  1rem;
+}
+.department-header-field {
+	border-bottom: 2px solid black;
+	color:  grey;
+	box-sizing: border-box;
+	padding: 0.5rem;
+}
+.department-header {
+	font-weight: bold;
+	padding: 1rem 0rem 0rem 0rem;
+	width: 100%;
+}
+.department-header > :first-child {
+	flex: 0 0 25%;
+	padding: 0.5rem 0rem 0.5rem 1rem;
+}
+.department-header > :nth-child(2) {
+  flex: 0 0 20%;
+}
+.department-header > :nth-child(3) {
+  flex: 0 0 40%;
+}
+.department-header > :nth-child(4) {
+  flex: 0 0 15%;
+}
