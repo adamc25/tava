@@ -19,27 +19,27 @@ func main() {
 	if err != nil {
 		log.Fatal("Error connecting to database: ", err)
 	}
-  err = db.Ping()
-  if err != nil {
-      log.Fatal("Failed to connect to the database: ", err)
-  }
-  http.HandleFunc("/department/list", func(w http.ResponseWriter, r *http.Request) {
+	err = db.Ping()
+	if err != nil {
+			log.Fatal("Failed to connect to the database: ", err)
+	}
+	http.HandleFunc("/department/list", func(w http.ResponseWriter, r *http.Request) {
 		handlers.GetAllDepartments(db, w, r)
 	})
 	http.HandleFunc("/employee", func(w http.ResponseWriter, r *http.Request) {
-    handlers.EnableCors(w, r)
-    switch r.Method {
-    case http.MethodDelete:
-    	handlers.DeleteEmployeeById(db, w, r)
-    case http.MethodGet:
-      handlers.GetEmployeeById(db, w, r)
-    case http.MethodPut:
-      handlers.UpdateEmployee(db, w, r)
-    case http.MethodPost:
-    	handlers.CreateEmployee(db, w, r)
-    default:
-      http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
-    }
+		handlers.EnableCors(w, r)
+		switch r.Method {
+		case http.MethodDelete:
+			handlers.DeleteEmployeeById(db, w, r)
+		case http.MethodGet:
+			handlers.GetEmployeeById(db, w, r)
+		case http.MethodPut:
+			handlers.UpdateEmployee(db, w, r)
+		case http.MethodPost:
+			handlers.CreateEmployee(db, w, r)
+		default:
+			http.Error(w, "Invalid request method", http.StatusMethodNotAllowed)
+		}
 	})
 	http.HandleFunc("/employees/list", func(w http.ResponseWriter, r *http.Request) {
 		handlers.GetEmployees(db, w, r)

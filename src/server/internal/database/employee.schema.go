@@ -4,13 +4,13 @@ const EmployeeSchema =
 `
 -- Create table if it doesn't exist
 CREATE TABLE IF NOT EXISTS employee (
-    id SERIAL PRIMARY KEY,
-    first_name TEXT NOT NULL,
-    last_name TEXT NOT NULL,
-    department_id INT NOT NULL,
-    employment_status_id INT NOT NULL,
-    avatar_url TEXT,
-    quote TEXT
+		id SERIAL PRIMARY KEY,
+		first_name TEXT NOT NULL,
+		last_name TEXT NOT NULL,
+		department_id INT NOT NULL,
+		employment_status_id INT NOT NULL,
+		avatar_url TEXT,
+		quote TEXT
 );
 
 -- Create an index for the first_name column

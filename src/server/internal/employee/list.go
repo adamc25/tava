@@ -9,10 +9,10 @@ import (
 )
 
 func getDefaultDirection(direction string) string {
-    if direction == "ASC" || direction == "DESC" {
-    	return direction
-    }
-    return "ASC"
+		if direction == "ASC" || direction == "DESC" {
+			return direction
+		}
+		return "ASC"
 }
 
 func getWhereClause(q meta.QueryMeta, column string, tableName string) (string, []interface{}) {
